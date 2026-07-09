@@ -1,0 +1,60 @@
+# compile and build files
+build/
+cmake-build-debug/
+cmake-build-release/
+out/
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.a
+*.lib
+*.exe
+*.out
+*.appв
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CMakeUserPresets.json
+CTestTestfile.cmake
+_deps/
+
+# CLion specified
+.idea/
+*.iws
+*.iml
+*.ipr
+.cache/
+
+# bins and exes
+bin/
+lib/
+x64/
+x86/
+Debug/
+Release/
+MinSizeRel/
+RelWithDebInfo/
+
+# Logs and other log stuff
+*.log
+*.tmp
+*.temp
+
+# IDE stuff
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.suo
+*.sdf
+
+# User VSC/VS settings
+.vs/
+
+# Windows vcpkg manager installed packages stuff
+/vcpkg_installed/
