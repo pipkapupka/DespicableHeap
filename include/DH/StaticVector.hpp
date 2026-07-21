@@ -144,12 +144,12 @@ namespace DH {
         // ------ Random Access (Memories) -------- //
         // ------- Daft Punk Reference XD  -------- //
         reference operator[](const size_t index) {
-            DH_ASSERT(index >= size_);
+            DH_ASSERT(index < size_);
             return *reinterpret_cast<pointer>(data_ + index * sizeof(ElementType));
         }
 
         const_reference operator[](const size_t index) const {
-            DH_ASSERT(index >= size_);
+            DH_ASSERT(index < size_);
             return *reinterpret_cast<const_pointer>(data_ + index * sizeof(ElementType));
         }
 
@@ -159,12 +159,12 @@ namespace DH {
          * @return Object or nullptr if there is nothing at given index.
          */
         reference at(const size_t index) {
-            DH_ASSERT(index >= size_);
+            DH_ASSERT(index < size_);
             return *reinterpret_cast<pointer>(data_ + index * sizeof(ElementType));
         }
 
         const_reference at(const size_t index) const {
-            DH_ASSERT(index >= size_);
+            DH_ASSERT(index < size_);
             return *reinterpret_cast<const_pointer>(data_ + index * sizeof(ElementType));
         }
 
